@@ -1,10 +1,14 @@
 
 nav{
-	height: 30px;
-	background-color: grey;
+	height: 50px;
+	background-color: rgba(0,0,0,0.1);
 	margin: 0;
 	position: fixed;
 	width: 100%;
+	margin:0;
+	top: 0;
+	right: 0;
+	text-align: right;
 }
 
 nav div{
@@ -12,12 +16,117 @@ nav div{
 	font-family: arial;
 	font-size: 20px;
 	font: bold;
+	position: absolute;
+	left: 50px;
+	top: 10px;
 }
 
-nav ul{
-	display: inline;
+.nav-list{
+	display: inline-block;
 }
 
-nav ul li{
+.nav-list li{
 	display: inline;
+	padding-right: 16px;
+	font-family: arial;
+}
+
+.nav-list a:link{
+	color: #8483D8;
+}
+.nav-list a:hover{
+	color: #FFED99!important;
+}
+.nav-list a:visited{
+	color: #4D66FA;
+}
+
+main{
+	margin-top: 100px;
+	margin-left: 50px;
+}
+
+a{
+	text-decoration-line: none;
+}
+
+.search-input{
+	font-size: 25px;
+	display: inline-block;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.search-button img{
+	height: 40px;
+	position: absolute;
+}
+
+.search-button img:active{
+	transform: translateY(4px);
+}
+
+.search-button img{
+	border: 1px black solid;
+}
+	
+
+.search-bar{
+	display: inline-block;
+	position: relative;
+}
+
+.paging{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.paging button{
+	height: 40px;
+	padding-left: 25px;
+	padding-right: 25px;
+	font-size: 16px;
+	background-color: white;
+	border: 1px black solid;
+	cursor: pointer;
+}
+
+.paging button:hover{
+	background-color: grey;
+}
+
+.paging button:active{
+	transform: translateY(3px);
+}
+
+.search-result-display ul{
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.search-result-detail{
+	padding-right: 16px;
+	font-size: 20px;
+	color: rgba(0,0,0, 0.4);
+}
+
+.search-result-title{
+	padding-right: 16px;
+	font-size: 25px;
+}
+
+.search-result-title:link{
+	color: blue;
+}
+
+.search-result-title:visited{
+	color: #5332E6;
+}
+
+.search-result-title:active{
+	background-color: rgba(0,0,0, 0.5)!important;	
+}
+
+.search-result-title:hover{
+	background-color: rgba(0,0,0, 0.2);
 }
