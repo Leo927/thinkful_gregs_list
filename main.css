@@ -1,0 +1,23 @@
+
+nav{
+	height: 30px;
+	background-color: grey;
+	margin: 0;
+	position: fixed;
+	width: 100%;
+}
+
+nav div{
+	display: inline-block;
+	font-family: arial;
+	font-size: 20px;
+	font: bold;
+}
+
+nav ul{
+	display: inline;
+}
+
+nav ul li{
+	display: inline;
+}
