@@ -1,6 +1,6 @@
 
-nav{
-	height: 50px;
+.navbar{
+	height: 30px;
 	background-color: rgba(0,0,0,0.1);
 	margin: 0;
 	position: fixed;
@@ -8,38 +8,45 @@ nav{
 	margin:0;
 	top: 0;
 	right: 0;
-	text-align: right;
+	padding: 5px;
 }
 
-nav div{
+.logo{
 	display: inline-block;
 	font-family: arial;
 	font-size: 20px;
 	font: bold;
-	position: absolute;
-	left: 50px;
-	top: 10px;
+	cursor: pointer;
+	padding-left: 20px;
+	padding-top: 3px;
 }
 
-.nav-list{
+.top-nav{
 	display: inline-block;
+	position: absolute;
+	top: 10px;
+	right: 10px;
 }
-
-.nav-list li{
-	display: inline;
+.top-nav a{
+	padding-left: 16px;
 	padding-right: 16px;
-	font-family: arial;
+	font-size: 16px;
 }
 
-.nav-list a:link{
+.top-nav a:link{
 	color: #8483D8;
 }
-.nav-list a:hover{
+.top-nav a:hover{
 	color: #FFED99!important;
 }
-.nav-list a:visited{
+.top-nav a:visited{
 	color: #4D66FA;
 }
+.top-nav a:active{
+	background: rgba(0,0,0,0.1);
+	color: #4D66FA;
+}
+
 
 main{
 	margin-top: 100px;
@@ -53,27 +60,30 @@ a{
 .search-input{
 	font-size: 25px;
 	display: inline-block;
-	position: relative;
 	margin-bottom: 10px;
 }
 
-.search-button img{
-	height: 40px;
-	position: absolute;
+.search-bar .search-input,
+.search-bar .search-button{
+	height: 30px;
+	border: 1px black solid;
+	border-radius: 3px;
+	display: inline-block;
 }
 
-.search-button img:active{
+.search-button:active{
 	transform: translateY(4px);
 }
 
-.search-button img{
-	border: 1px black solid;
-}
-	
 
 .search-bar{
 	display: inline-block;
 	position: relative;
+}
+
+.search-bar input{
+	height: 37px;
+	font-size: 40px;
 }
 
 .paging{

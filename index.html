@@ -5,21 +5,18 @@
 	<title>CSS Layout Example</title>
 </head>
 <body>
-	<nav>
-		<div>Greg's List</div>
-		<ul class="nav-list">
-			<li><a href="index.html">Post</a></li>
-			<li><a href="index.html">Account</a></li>
-		</ul>
-	</nav>
-
+	<div class="navbar">
+		<div class="logo">Greg's List</div>
+		<nav class="top-nav">		
+			<a class="nav-list" href="index.html">Post</a>
+			<a class="nav-list" href="index.html">Account</a>
+		</nav>
+	</div>	
 	<main>
-		<div class="sear">
-			<input type="text" name="search_key_word" placeholder="Search software jobs" class="search-input">
-			<a class="search-button" href="index.html">
-				<img  src="https://curricula.thinkful.com/curricula/s1lUoigoX28V3JL7MWMR/FEWD-001/v5/assets2/1.5.6_challenge_design_to_code/magnifying-glass.png">
-			</a>
-		</div>
+		<section class="search-bar">
+			<input type="text" class="search-inp" name="search_key_word" placeholder="Search software jobs" class="search-input">
+			<input type="image" class="search-button" role="button" src="https://curricula.thinkful.com/curricula/s1lUoigoX28V3JL7MWMR/FEWD-001/v5/assets2/1.5.6_challenge_design_to_code/magnifying-glass.png" alt="Search" >
+		</section>
 		<div class="paging">
 			<button>&lt prev</button>
 			<button>1 to 100 of 179</button>
